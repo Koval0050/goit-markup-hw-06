@@ -64,7 +64,6 @@ button {
 }
 /*========================/UTILITY====================*/
 
-
 /*========================HEADER====================*/
 .logo {
   font-family: "Raleway";
@@ -229,7 +228,6 @@ button {
 }
 /*========================/HERO====================*/
 
-
 /*========================ASTRONAUT====================*/
 .big-svg-link {
   background-color: #f4f4fd;
@@ -240,7 +238,7 @@ button {
   width: 264px;
   margin-bottom: 8px;
 }
-.big-svg{
+.big-svg {
   width: 64px;
   height: 64px;
 }
@@ -293,8 +291,6 @@ button {
 }
 
 /*========================/TEAM CARD====================*/
-
-
 
 /*========================CUSTOMERS====================*/
 
@@ -368,6 +364,67 @@ button {
   height: 24px;
   width: 24px;
 }
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+.footer-wraper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.user-mail-subscribe {
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px 0 8px 16px;
+  height: 40px;
+  width: 264px;
+  color: #ffffff;
+}
+.user-mail-subscribe::placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.subscribe-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: end;
+  max-height: 40px;
+  gap: 16px;
+  padding: 8px 24px;
+  background: #4d5ae5;
+  border-color: #4d5ae5;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: background-color var(--transition-func),
+    box-shadow var(--transition-func), border-color var(--transition-func);
+}
+.subscribe-btn:is(:hover, :focus) {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: #404bbf;
+}
+.subscribe-svg {
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+}
 /*========================/FOOTER====================*/
 
 /*========================MODAL WINDOW====================*/
@@ -387,6 +444,9 @@ button {
   position: absolute;
   width: 408px;
   height: 576px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 72px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -430,12 +490,140 @@ button {
   width: 8px;
   transition: fill var(--transition-func);
 }
-
 /*========================/MODAL WINDOW====================*/
 
-/*========================/PAGE STUDIO====================*/
-/*========================/PAGE STUDIO====================*/
+/*========================MODAL FORM====================*/
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.label-desc {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  /* margin-bottom: 4px; */
+}
+.modal-input-wrapper {
+  position: relative;
+}
+.modal-input {
+  width: 100%;
+  padding-left: 38px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-func);
+}
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-input-svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: fill var(--transition-func);
+}
+.modal-input:focus + .modal-input-svg {
+  fill: #4d5ae5;
+}
+.user-message {
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: none;
+  transition: border-color var(--transition-func);
+}
+.user-message:focus {
+  border-color: #4d5ae5;
+}
+.user-message::placeholder {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.label-check {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
+.label-check::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/vector.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+  height: 16px;
+  width: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  transition: background-color var(--transition-func);
+}
+.modal-check:focus + .label-check::before {
+  border: 1.25px solid #404bbf;
+}
+.modal-check:checked + .label-check::before {
+  border: 1.25px solid #404bbf;
+  background-color: #404bbf;
+}
+
+.modal-submit-btn {
+  padding: 16px 32px;
+  background: #4d5ae5;
+  border-color: #4d5ae5;
+  border-radius: 4px;
+  color: #ffffff;
+  min-width: 169px;
+  text-align: center;
+  align-self: center;
+  transition: background-color var(--transition-func),
+    box-shadow var(--transition-func);
+}
+.modal-submit-btn:is(:hover, :focus) {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*========================/MODAL FORM====================*/
+
+/*========================/PAGE STUDIO====================*/
+/*========================/PAGE STUDIO====================*/
 
 /*========================PAGE PORTFOLIO====================*/
 /*========================PAGE PORTFOLIO====================*/
@@ -508,7 +696,6 @@ button {
   transform: translateY(100%);
   transition: transform var(--transition-func);
   /* overflow: scroll; */
-  
 }
 .overlay-text {
   color: #f4f4fd;
@@ -523,10 +710,7 @@ button {
   border-top: 0;
 }
 
-
 /*========================/FILTER====================*/
-
-
 
 /*========================/PAGE PORTFOLIO====================*/
 /*========================/PAGE PORTFOLIO====================*/

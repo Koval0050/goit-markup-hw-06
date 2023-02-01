@@ -120,7 +120,7 @@ button {
   top: 43px;
   width: 100%;
   height: 4px;
-  background: #404bbf;
+  background: var(--color-hover-effect);
   border-radius: 2px;
 }
 .menu-item-link:hover,
@@ -287,7 +287,7 @@ button {
 }
 .icon-container:hover,
 .icon-container:focus {
-  background-color: #404bbf;
+  background-color: var(--color-hover-effect);
 }
 .team-card-svg {
   width: 16px;
@@ -314,8 +314,8 @@ button {
 }
 .client-container:hover,
 .client-container:focus {
-  border-color: #404bbf;
-  fill: #404bbf;
+  border-color: var(--color-hover-effect);
+  fill: var(--color-hover-effect);
 }
 
 .client-svg {
@@ -419,9 +419,9 @@ button {
     box-shadow var(--transition-func), border-color var(--transition-func);
 }
 .subscribe-btn:is(:hover, :focus) {
-  background-color: #404bbf;
+  background-color: var(--color-hover-effect);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-color: #404bbf;
+  border-color: var(--color-hover-effect);
 }
 .subscribe-svg {
   height: 24px;
@@ -446,10 +446,7 @@ button {
   left: 50%;
   position: absolute;
   width: 408px;
-  height: 576px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 72px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -482,7 +479,7 @@ button {
 }
 .btn-modal-close:hover,
 .btn-modal-close:focus {
-  background-color: #404bbf;
+  background-color: var(--color-hover-effect);
 }
 .btn-modal-close:hover .svg-close,
 .btn-modal-close:focus .svg-close {
@@ -516,12 +513,17 @@ button {
   display: block;
   margin-bottom: 8px;
 }
+.modal-label-comment{
+  display: block;
+  margin-bottom: 16px;
+}
 .label-desc {
+  display: block;
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  /* margin-bottom: 4px; */
+  margin-bottom: 4px;
 }
 .modal-input-wrapper {
   position: relative;
@@ -576,7 +578,6 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 16px;
   margin-bottom: 24px;
   font-size: 12px;
   line-height: 16px;
@@ -600,11 +601,11 @@ button {
   transition: background-color var(--transition-func);
 }
 .modal-check:focus + .label-check::before {
-  border: 1.25px solid #404bbf;
+  border: 1.25px solid var(--color-hover-effect);
 }
 .modal-check:checked + .label-check::before {
-  border: 1.25px solid #404bbf;
-  background-color: #404bbf;
+  border: 1.25px solid var(--color-hover-effect);
+  background-color: var(--color-hover-effect);
 }
 
 .modal-submit-btn {
@@ -620,7 +621,7 @@ button {
     box-shadow var(--transition-func);
 }
 .modal-submit-btn:is(:hover, :focus) {
-  background-color: #404bbf;
+  background-color: var(--color-hover-effect);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
